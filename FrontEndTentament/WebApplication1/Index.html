@@ -1,9 +1,19 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="MyApp">
 <head>
-    <title></title>
+    <title>Genres</title>
 </head>
 <body>
+    <div style="background-color: gray">
+        <a href="#/">New genre.</a>
+        <a href="#/List">List genres.</a>
+    </div>
+    <div data-ng-view></div>
 
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="App/Controllers/ListGenresController.js"></script>
+    <script src="App/Controllers/NewGenreController.js"></script>
+    <script src="App/app.js"></script>
 </body>
 </html>

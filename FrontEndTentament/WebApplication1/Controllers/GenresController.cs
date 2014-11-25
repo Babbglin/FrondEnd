@@ -26,7 +26,7 @@ namespace WebApplication1.Controllers
     */
     public class GenresController : ODataController
     {
-        private ChinookEntities db = new ChinookEntities();
+        private ChinookEntities1 db = new ChinookEntities1();
 
         // GET: odata/Genres
         [EnableQuery]

@@ -13,10 +13,10 @@ namespace WebApplication1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ChinookEntities : DbContext
+    public partial class ChinookEntities1 : DbContext
     {
-        public ChinookEntities()
-            : base("name=ChinookEntities")
+        public ChinookEntities1()
+            : base("name=ChinookEntities1")
         {
         }
     

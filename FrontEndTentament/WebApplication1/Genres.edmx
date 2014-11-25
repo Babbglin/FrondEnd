@@ -27,7 +27,7 @@
           <Property Name="GenreId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="ChinookEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ChinookEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Genres" EntityType="Self.Genre" />
         </EntityContainer>
       </Schema>
@@ -35,7 +35,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ChinookModelStoreContainer" CdmEntityContainer="ChinookEntities">
+        <EntityContainerMapping StorageEntityContainer="ChinookModelStoreContainer" CdmEntityContainer="ChinookEntities1">
           <EntitySetMapping Name="Genres">
             <EntityTypeMapping TypeName="ChinookModel.Genre">
               <MappingFragment StoreEntitySet="Genre">
