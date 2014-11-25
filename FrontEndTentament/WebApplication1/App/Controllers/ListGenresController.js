@@ -12,6 +12,11 @@
         console.log('Delete genre');
     };
 
-
+    $scope.UpdateGenre = function (entity) {
+        $http.put("/odata/Genres:" + "@key")
+            .success(function () {
+                console.log($scope.UpdateGenre.name + ' ' + 'was updated.');
+            });
+    };
 
 };
