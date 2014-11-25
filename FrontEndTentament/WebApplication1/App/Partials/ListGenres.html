@@ -6,7 +6,7 @@
     <tr data-ng-repeat="a in Genres">
         <td data-ng-bind="a.GenreId"></td>
         <td data-ng-bind="a.Name"></td>
-        <td><button data-ng-click="UpdateGenre(a.GenreId)">Update</button></td>
+        <td><button data-ng-click="UpdateGenre(Genre)">Update</button></td>
         <td><button data-ng-click="DeleteGenre(a.GenreId)">Delete</button></td>
     </tr>
 </table>
